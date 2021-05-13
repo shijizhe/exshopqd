@@ -1,0 +1,9 @@
+:root {
+    --color-base: #efafad;
+}
+
+*,
+*::before, *::after {
+    margin: 0;
+    padding: 0;
+}
