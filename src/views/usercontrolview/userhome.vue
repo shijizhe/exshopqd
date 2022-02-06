@@ -6,7 +6,10 @@
       </el-header>
       <el-container  style="height: 670px">
         <el-aside width="250px" style="text-align: left">
+          <keep-alive>
             <SideMenu></SideMenu>
+          </keep-alive>
+
         </el-aside>
         <el-main>
           <div>
@@ -55,7 +58,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .el-header{
   background-color: #fff;
   color: #333;

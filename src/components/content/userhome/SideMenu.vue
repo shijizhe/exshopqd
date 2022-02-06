@@ -11,6 +11,10 @@
         style="padding-left: 10px"
     >
 
+      <el-menu-item index="/">
+        <template #title>商城首页</template>
+      </el-menu-item>
+
       <el-menu-item index="/userhome/center">
         <template #title>个人信息</template>
       </el-menu-item>
@@ -23,8 +27,12 @@
         <template #title>收货地址</template>
       </el-menu-item>
 
-      <el-menu-item index="2">
+      <el-menu-item index="/userhome/myorder">
         <template #title>我的订单</template>
+      </el-menu-item>
+
+      <el-menu-item index="/userhome/mycharity">
+        <template #title>我的公益</template>
       </el-menu-item>
 
     </el-menu>

@@ -4,8 +4,10 @@ import router from './router'
 import store from './store'
 import './plugins/element.js'
 import installElementPlus from './plugins/element'
+import iconhelper from "./components/common/iconhelper";
 
 
 const app = createApp(App)
 installElementPlus(app)
 app.use(store).use(router).mount('#app')
+app.component("iconhelper",iconhelper)

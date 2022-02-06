@@ -26,7 +26,8 @@
                 <el-dropdown-item @click="userCenter">个人信息</el-dropdown-item>
                 <el-dropdown-item @click="userPassword">修改密码</el-dropdown-item>
                 <el-dropdown-item @click="userAddress">收货地址</el-dropdown-item>
-                <el-dropdown-item>我的订单</el-dropdown-item>
+                <el-dropdown-item @click="userOrder">我的订单 </el-dropdown-item>
+                <el-dropdown-item @click="userCharity">我的公益 </el-dropdown-item>
                 <el-dropdown-item @click="logout">退出</el-dropdown-item>
               </el-dropdown-menu>
             </template>
@@ -90,6 +91,12 @@ export default {
     },
     userAddress(){
       this.$router.push('/userhome/address')
+    },
+    userOrder(){
+      this.$router.push('/userhome/myorder')
+    },
+    userCharity(){
+      this.$router.push('/userhome/mycharity')
     },
     logout(){
       this.$router.push('/')

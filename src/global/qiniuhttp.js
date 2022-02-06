@@ -1,2 +1,2 @@
 
-window.cdnurl = 'http://qs7mez6je.hd-bkt.clouddn.com/'
+window.cdnurl = 'http://qtg6q2mj3.hd-bkt.clouddn.com/'

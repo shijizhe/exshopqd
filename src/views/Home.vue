@@ -29,7 +29,10 @@
       <el-container style="height: 1000px; border: 1px solid #eee;">
         <!--侧边导航栏 -->
         <el-aside width="250px" style="text-align: left" class="affix-container">
-           <SideMenu @categoryChange="categoryChange(($event))"></SideMenu>
+          <keep-alive>
+            <SideMenu @categoryChange="categoryChange(($event))"></SideMenu>
+          </keep-alive>
+
         </el-aside>
 
         <!--商品展示主窗口 -->
@@ -43,7 +46,7 @@
               </el-tab-pane>
               <el-tab-pane label="志愿区" name="second">
                  <el-main>
-
+                   <charity></charity>
                  </el-main>
               </el-tab-pane>
             </el-tabs>
@@ -62,10 +65,12 @@ import Logdialog from "../components/common/logandre/Logdialog";
 import Topnav from "../components/content/topnavbar/Topnav"
 import Goods from "./mainview/Goods";
 import SideMenu from "../components/content/goods/SideMenu";
+import Charity from "./mainview/Charity";
 
 export default {
   name: 'Home',
   components: {
+    Charity,
     SideMenu,
     Goods,
     Logdialog,
@@ -113,8 +118,6 @@ export default {
 .el-main {
   background-color: #fff;
   color: #333;
-  text-align: center;
-  line-height: 160px;
 }
 
 </style>
